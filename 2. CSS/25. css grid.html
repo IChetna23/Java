@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 100px 100px 100px;  */
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            justify-content: center; 
+            /* comes in center -grid  */
+        }
+        .box{
+            border: 2px solid black;
+            background-color: yellow;
+            padding: 22px;
+            margin: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">item - 1</div>
+        <div class="box">item - 2</div>
+        <div class="box">item - 3</div>
+        <div class="box">item - 4</div>
+        <div class="box">item - 5</div>
+        <div class="box">item - 6</div>
+        <div class="box">item - 7</div>
+        <div class="box">item - 8</div>
+        <div class="box">item - 9</div>
+        <div class="box">item - 10</div>
+        <div class="box">item - 11</div>
+        <div class="box">item - 12</div>
+        <div class="box">item - 1</div>
+    </div>
+</body>
+</html>

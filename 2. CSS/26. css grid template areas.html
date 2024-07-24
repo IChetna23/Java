@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid template area</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'; 
+            /* matrix same no of cols  */
+            grid-gap: 1rem;
+        }
+        /* .box{
+            border: 2px solid black;
+            background-color: orange;
+        } */
+         .item{
+            background-color: pink;
+            border: 2px solid brown;
+         }
+         #navbar{
+            grid-area: navbar;
+         }
+         #section{
+            grid-area: section;
+         }
+         #aside{
+            grid-area: aside;
+         }
+         #footer{
+            grid-area: footer;
+         }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div id="navbar" class="item">
+            home contact us about us services
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam est quas facere consequatur illo odit explicabo, alias, consequuntur reprehenderit quod sequi aspernatur facilis nemo rerum ullam at consectetur nam beatae illum cupiditate perspiciatis saepe similique. Quam sunt eum praesentium, tenetur alias libero modi unde. Beatae voluptate sint iste dolores.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis unde fuga aliquam officiis placeat? Perferendis impedit rem aperiam iusto totam nisi non? Veritatis voluptate maxime suscipit ea aperiam exercitationem adipisci at sunt eos quis.
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, nihil assumenda dignissimos non deserunt omnis inventore architecto doloremque dolorem, cum corporis ratione fugiat iure itaque quam perferendis minus deleniti odit!
+        </div>
+        <!-- <div class="box">box - 1</div>
+        <div class="box">box - 2</div>
+        <div class="box">box - 3</div>
+        <div class="box">box - 4</div>
+        <div class="box">box - 5</div>
+        <div class="box">box - 6</div>
+        <div class="box">box - 7</div>
+        <div class="box">box - 8</div>
+        <div class="box">box - 9</div>
+        <div class="box">box - 10</div>
+        <div class="box">box - 11</div>
+        <div class="box">box - 12</div>
+        <div class="box">box - 13</div>
+        <div class="box">box - 14</div> -->
+    </div>
+</body>
+</html>

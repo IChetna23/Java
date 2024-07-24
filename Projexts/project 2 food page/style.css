@@ -1,0 +1,252 @@
+/* Css Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+:root {
+    --navbar-height: 59 px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* logo and images  */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: 3px 6px;
+    border-radius: 100px;
+}
+
+/* list styling  */
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+    font-family: "Hubballi", sans-serif;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    /* pseudo selector for background  */
+    content: "";
+    background: url("https://c4.wallpaperflare.com/wallpaper/920/649/77/italian-spaghetti-wallpaper-thumb.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 72%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: "Hubballi", sans-serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Hubballi", sans-serif;
+}
+
+/* services section  */
+
+#services{
+    margin: 6px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 12px;
+    margin: 9px 3px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+#services .box p{
+    font-family: "Hubballi", sans-serif;
+}
+#services .box img{
+    display: block;
+    margin: 3px auto;
+    height: 100px;
+    width: 130px;
+}
+
+/* client-section  */
+
+#client-section{
+    position: relative;
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://png.pngtree.com/thumb_back/fh260/20170907/pngtree-Paper-Notebook-Blank-Texture-photo-899448.jpg");
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{ 
+    height: 150px;
+    width: 150px;
+}
+
+/* contact-section  */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url("https://www.gayatravel.com.my/ver4/wp-content/uploads/2020/01/Photo-13-11-2019-12-48-35-PM.jpg");
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Hubballi", sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: 2px solid brown;
+}
+
+/* footer  */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px 3px 9px 3px;
+    font-size: 15px;
+}
+
+/* utility classes  */
+
+.h1-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: "Hubballi", sans-serif;
+}
+
+.h2-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: "Hubballi", sans-serif;
+}
+
+.btn {
+    color: white;
+    background-color: brown;
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: brown;
+    background-color: white;
+    padding: 6px 20px;
+    border: 2px solid brown;
+}
+
+.center{
+    text-align: center;
+}

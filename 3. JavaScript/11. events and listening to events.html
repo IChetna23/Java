@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> eventsa and listening to events </title>
+    <style>
+        #btn{
+            padding: 10px;
+            border: 2px solid black;
+            background-color: blueviolet;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>paragaraph </h1>
+        <p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quo perspiciatis hic? Corrupti perferendis magni eligendi, blanditiis quam dolore. Iure, itaque! Natus, non reprehenderit inventore incidunt quam, ducimus, officiis unde voluptates laborum eveniet voluptate? </p>
+        <button id="btn" onclick="togglehide()"> show/ hide </button>
+    </div>
+    <script>
+        function togglehide(){
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        } // work automatically also
+        let para = document.getElementById('para');
+        para.addEventListener("mouseover", function run(){
+            console.log("mouse is over para"); // alert can be also there instead of console.log
+        })
+        para.addEventListener("mouseout", function run(){
+            console.log("mouse is outside para");
+        })
+    </script>
+</body>
+</html>

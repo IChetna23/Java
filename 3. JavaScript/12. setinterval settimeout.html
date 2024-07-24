@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time out and set interval in js </title>
+</head>
+<body>
+    <div class="con"> time out
+        <span id="time"> </span> </div>
+    <script>
+        function greet(name, bytetext){
+            console.log("hello " + name + ", good morning. " + bytetext)
+        }
+        timeout = setTimeout(greet, 5000, 'harry', 'hey!'); //millisec 
+        // function passed as arguemnet -- no paranthesis
+
+        console.log(timeout); // id of settimeout call
+        clearTimeout(timeout); // ex - if user sign up before 10 sec -- clear fun for asking sign up 
+
+        intervalid = (greet, 2000, 'harry', 'bye');
+        clearInterval(intervalid);
+
+        function displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displaytime, 1000);
+
+    </script>
+</body>
+</html>

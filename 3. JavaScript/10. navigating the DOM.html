@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigating DOM </title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home </li>
+            <li>about </li>
+            <li>contact us </li>
+            <li>more about us </li>
+            <li>services </li>
+        </ul>
+    </div>
+    <div class="container">hello </div>
+    <script>
+        let get  = document.getElementById('main');
+        console.log(main); 
+        
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        // nav.innerhtml - in console - print string - change
+        let containers = document.getElementsByClassName('container');
+        console.log(containers); //container[0] - in console
+
+        //csss selectors - returns first matched
+        let sel = document.querySelector('.container'); // #nav
+        console.log("selector returns", sel);
+
+        let sel2 = document.querySelector('#nav>li'); // #nav
+        console.log("selector returns", sel2);
+        let sel3 = document.querySelectorAll('#main>lir'); // #nav
+        console.log("selector returns", sel3);
+        //sel[o].innerHTML = 
+    </script>
+</body>
+</html>

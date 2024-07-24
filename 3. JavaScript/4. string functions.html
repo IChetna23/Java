@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <script>
+        var str = "this is a string that is";
+        console.log(str);
+        console.log(str.charAt(2));
+        console.log(str.charCodeAt(2));
+
+        var position = str.indexOf("is");
+        console.log(position);
+        // first occurance of string 
+        var position = str.lastIndexOf("is");
+        console.log(position);
+        // last occurance of string 
+
+        // var substr = str.substring(1,6);
+        var substr = str.substr(1,6);
+        // var substr = str.slice(1,6);
+        console.log(substr);
+        // slic - take -values substring no -value 
+
+        var replaced = str.replace("string","harry");
+        console.log(str);
+
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+
+        console.log(str.concat("new string"));
+
+        var newstr = "   this   is  "
+        console.log(newstr.trim()); 
+        // remove space from start and end 
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("https://cdn.shopify.com/s/files/1/1876/4703/files/shutterstock_1082323112.jpg?v=1651852877");
+    color: white;
+    font-family: cursive;
+}
+
+header {
+    background-color: black;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    background-color: black;
+}
+
+.left img {
+    width: 60px;
+    height: 58px;
+    border-radius: 100%;
+    filter: invert(100%);
+    display: inline-block;
+}
+
+.left2 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 121px;
+    width: 25%;
+    padding: 19px 2px;
+
+}
+
+.mid {
+    display: block;
+    width: 45%;
+    margin: 0px auto;
+    border: 2px solid black;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 3px;
+    border: 2px solid rgb(6, 8, 6);
+    background-color: black;
+}
+
+.navbar {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 8);
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 34px 23px;
+    font-size: 20px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+}
+
+.btn {
+    margin: 3px 9px;
+    padding: 8px 11px;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.btn:hover {
+    background-color: black;
+    color: azure;
+    text-decoration: underline;
+}
+
+.container {
+    background-color: black;
+    margin: 5% 55%;;
+    padding: 3px 4px;
+    width: 34%;
+    height: 47%;
+    font-size: 27px;
+    border: 2px solid rgb(250, 250, 250);
+    border-radius: 30px;
+}
+
+.formgroup input {
+    margin: 0px auto;
+    padding: 13px 85px;
+    border: 2px solid gray;
+    width: 97px;
+    height: 1px;
+    text-align: center;
+    display: block;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.formgroup button {
+    display: block;
+    margin: 10px auto;
+}

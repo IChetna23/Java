@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arroe functions </title>
+</head>
+<body>
+    <div class="con">hi </div>
+    <script>
+        function greet(){
+            console.log("hi");
+        }
+        greet();
+
+        // sum = (a,b) => {
+        //     return a+b;
+        // }
+
+        let sum = (a,b) => a+b;
+        console.log(sum(2,3));
+        
+        let half = a => a/2;
+        console.log(half(20));
+
+        setTimeout(() => {
+            console.log("hello guys")
+        }, 2000);
+
+        let obj = {
+            greeting : 'hi',
+            names : ['chetna', 'harry', 'js'],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " dummy " + student);
+                });
+            }
+        } // this.greeting refer outside greeting becoz arrow func // laxical this // arroe func in func in obj 
+        obj.speak();
+
+    </script>
+</body>
+</html>

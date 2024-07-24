@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time </title>
+    <style>
+        #time{
+            color: black;
+            background-color: rgb(233, 194, 217);
+            border: 2px solid rgb(14, 14, 14);
+            padding: 34px;
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="con"> <h1> date and time in js </h1></div>
+    <span><h3 id="time"> </h3></span>
+    <script>
+        console.log("date is - ");
+        let now = new Date(); // now is objecct date- constructor
+        console.log(now);
+        let dt = new Date(0); // refrence -ex:  1000 --> + 1000 ms
+        console.log(dt);
+        let date = new Date("2029-10-11");
+        console.log(date);
+
+        // year, month, date, hr, min, s, ms
+        let d = new Date(2024, 7, 21, 7, 4, 7, 4 );
+        console.log(d);
+        console.log(d.getDate());
+        console.log(d.getFullYear());
+        console.log(d.getMonth());
+        console.log(d.getMilliseconds());
+        d.setDate(19);
+        console.log(d.getDate());
+
+        setInterval(updatetime, 1000);
+        function updatetime(){
+            time.innerHTML = new Date();
+        }
+        </script>
+</body>
+</html>

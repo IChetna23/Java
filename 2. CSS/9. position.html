@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            height: 5000px;
+            background-color: blueviolet;
+        }
+        .box{
+            border: 2px solid pink;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 4px;
+            color: blanchedalmond;
+            padding: 6px;
+        }
+        #box3{
+            position: static; 
+            /* default */
+            position: relative;
+            top: 30px;
+            /* relative to normal position  */
+        }
+        #box4{
+            position: absolute;
+            /* relative to its parent  */
+            left: 70px;
+            top: 89px;
+        }
+        #box1{
+            position: sticky;
+            top: 3px;
+            left: 2px;
+        }
+        #box2{
+            position: fixed;
+            bottom: 0;
+            right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">Chat us</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+    </body>
+</html>

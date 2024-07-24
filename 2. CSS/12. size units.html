@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .container{
+            font-size: 10px;
+            border: 3px solid grey;
+            height: 97vh; /*vieport height*/
+            width: 98vw;
+        }
+        h1{
+            text-align: center;
+        }
+        h1#first{
+            font-size: 3em;  /* 3 times parent */
+            padding: 3em; /* 3 time font-size */
+        }
+        #second{
+            font-size: 3rem; /* 3 times default html font*/
+            padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is heading</h1>
+        <h1 id="second">This is heading</h1>
+        <h1 id="third">This is heading</h1>
+    </div>
+</body>
+</html>

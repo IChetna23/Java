@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects</title>
+</head>
+<body>
+    <!--  dom - document object model - html page  -->
+    <div class="container">html</div>
+    <script>
+        // values- primitive and rference 
+        let a = 23;
+        let b = "hi";
+        let c = true;
+        let d = null;
+        let e = undefined; // no value assigned
+
+        // object - other than primitives - key value pairs
+
+        let employee = {
+            name : "chetna",
+            sem : 4,
+            course : "cse- ai"
+        }
+        console.log(employee.sem);
+        console.log(employee['sem']);
+        // sem 1 is key written as "sem 1", accessed as employee['sem 1']
+        let myobject = {
+            name : "chetna"
+        }
+        console.log(employee, myobject);
+
+        // arrya - object 
+
+        let names = [1, 3, "chetna" , null, true]
+        console.log(names[0]);
+
+        let name = new Array(11,2,3,"me");
+        // let name = new array(23); -- 23 elements in array 
+        // ; is for clean code -- can run withhout it also
+        name = name.sort();
+        name.push("this is array");
+        console.log(name);
+        console.log(name.length);
+    </script>
+</body>
+</html>

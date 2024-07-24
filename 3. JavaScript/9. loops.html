@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop </title>
+</head>
+<body>
+    <div>hello for loop </div>
+    <script>
+        // for(let i =0; i<3; i++){ 
+        //     console.log(i);
+        // }
+
+        let array = ['harsh', 'yamini', 'jaya', 'tyagi'];
+        // for (let index = 0; index < array.length; index++) {
+        //    console.log('elemnent is ' + array[index]);
+        // }
+
+        // array.forEach(function f(element){
+        //     console.log('element is ' + element);
+        // });
+
+        for (const element of array) {
+            console.log('element is ' + element);
+        }
+
+        let employee = {
+            name : 'harsh',
+            age : 20,
+            sem : 4
+        };
+
+        for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // while loop
+
+        let i =0;
+        while(i<4){
+            console.log(' ${i} is less then 4 ');
+            i++;
+        }
+        
+        // do while loop
+
+        do{
+            console.log(' ${i} is less then 4 ');
+            i++;
+        }while(i<5);
+
+    </script>
+</body>
+</html>

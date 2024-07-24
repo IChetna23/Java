@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionlas</title>
+</head>
+<body>
+    <!-- div.ul.li{item-$} + enter  -->
+    <div class="ul li">item-1</div>
+    <div class="ul li">item-2</div>
+    <script>
+
+        // scope 
+
+        var string1 = "this is string."
+        var string1 = "this is new string."
+        // global and local scope
+        console.log(string1);
+        let a = "u"; 
+        // block level scope 
+        {
+            let a = "6";
+            console.log(a);
+        }
+        console.log(a);
+        const constant = "i will not change";
+        // constant = "i want to change but cant."; -- error
+        console.log(constant);
+
+        // if-else 
+
+        let age = 12;
+        if(age>18){
+            console.log("please drink water");
+        }
+        else if(age==3){
+            console.log("i am 3")
+        }
+        else{
+            console.log("buy me coldrink")
+        }
+
+        // switch  -- no break -- run all cases after match case
+
+        const cups = 70;
+        switch (cups) {
+            case 20:
+                console.log("i am 20")
+                break;
+        
+            case 30:
+                console.log("i am 30")
+                break;
+        
+            case 0:
+                console.log("i am 0")
+                break;
+        
+            case 50:
+                console.log("i am 50")
+                break;
+        
+            default:
+            console.log("i am none")
+                break;
+        }
+    </script>
+</body>
+</html>

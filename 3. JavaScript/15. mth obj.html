@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object in js </title>
+</head>
+<body>
+    <div class="con">math object in javascrpt </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("value of e is", Math.E);
+        console.log("value of log(10) is", Math.LN10);
+
+        let a = 10.9877476;
+        let b = 3.76;
+        console.log("round of a and b is ", Math.round(a), " and ", Math.round(b), " respectively.");
+
+        console.log("3 to power 9 is ", Math.pow(3, 9));
+        console.log("sq root of 49 is ", Math.sqrt(49));
+
+        console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8)); 
+        console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8));
+
+        // sin min max abs
+
+        //random no between 1 and 100
+        let l = 1; //a
+        let h = 100; //b
+        let r = l+(h-l)*Math.random();
+        console.log("random no bt 1 and 100 is ", r);
+
+    </script>
+</body>
+</html>

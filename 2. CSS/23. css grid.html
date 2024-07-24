@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 3fr;
+            grid-template-columns: 2fr 4fr;
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 1rem;
+        }
+        .box{
+            background-color: aquamarine;
+            border: 2px solid goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- divv.box{this is box-$}*9 + enter -->
+        <div class="box">this is item - 1</div>
+        <div class="box">this is item - 2</div>
+        <div class="box">this is item - 3</div>
+        <div class="box">this is item - 4</div>
+        <div class="box">this is item - 5</div>
+        <div class="box">this is item - 6</div>
+        <div class="box">this is item - 7</div>
+        <div class="box">this is item - 8</div>
+        <div class="box">this is item - 9</div>
+    </div>
+</body>
+</html>

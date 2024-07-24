@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selecction</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            }
+            header::before{
+                content: "";
+                background: url("https://picsum.photos/1440/1349")no-repeat center center/cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.59;
+        }
+        .navigation{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        section{
+            height: 200px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* section::before{
+            content: "this is content before section";
+        }
+        section::after{
+            content: "this is content after section";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation"><li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Servicse</li>
+            <li class="item">Contact us</li>
+        </ul>
+        </nav>
+        </header>
+            <section>
+                <h1>Welcome to coding world
+                </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quisquam iure nostrum modi omnis, hic atque harum eius. Temporibus libero, impedit labore optio </p>
+            
+            </section>
+</body>
+</html>
