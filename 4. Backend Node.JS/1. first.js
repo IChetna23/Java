@@ -1,4 +1,6 @@
 // console.log("hello"); 
+// repl - read evaluate print loop
+// - --> last variable value 
 
 const { createServer } = require('node:http');
 
@@ -9,7 +11,7 @@ const server = createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
 //   res.end('Hello World');
-res.end(`<!DOCTYPE html>
+  res.end(`<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
