@@ -1,0 +1,54 @@
+//- fill base template 
+
+extends base.pug 
+
+block scripts
+    script
+        include ../static/index.js
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+        
+    section#introSection
+        div  Welcome to my Dance Academy! 
+        div.small  Live Eat Dance Repeat 
+
+    section#missionSection
+        h2 Our Misson
+
+        div.card 
+          h3 Dance Perfection 
+          div.card-box 
+            div.card-img 
+              img(src="https://i.pinimg.com/originals/4a/d1/b8/4ad1b85c1a34110b17afd4c232c0d39a.jpg")
+            div.card-content 
+              p Goals of achieving perfection.
+
+        div.card 
+          h3 Dance The Way You Like 
+          div.card-box 
+              div.card-img 
+                img(src="https://stagea.blob.core.windows.net/images/photos/whitney-ballard-ac19/whitney-ballard-tupvkt34.uqe.jpg")
+              div.card-content 
+                p Enjoy the dance.  
+
+        div.card 
+          h3 Expert Teaching 
+          div.card-box 
+              div.card-img 
+                img(src="https://img.freepik.com/premium-vector/silhouette-gymnast-athlete-woman-action-black-color-only_925376-195627.jpg")
+              div.card-content 
+                p Leaded by the most talented dancers.
+ 
+
+    section#sponserSection
+        h2 Our Sponsers 
+
+        div#sponsers 
+          img(src="https://th.bing.com/th/id/R.fb8f73d6f0b352669447598d6a72daef?rik=isnAr5ssN47now&riu=http%3a%2f%2fsolarnavigator.net%2fsponsorship%2fsponsorship_images%2fApple_Inc_logo.gif&ehk=wWFioXr1bkYG9jbOpU7a7br3NxL5XcZYyzZxE4g73N0%3d&risl=&pid=ImgRaw&r=0", alt="Sponser Image" Class = "spimage")
+          img(src="https://th.bing.com/th/id/R.2e71474029c4bae26ec9044b4c3ad1bf?rik=pukGQHAft1Hl8A&riu=http%3a%2f%2fwww.pta.org%2fimages%2fdefault-source%2fimages%2fwhy-pta%2fsponsors%2flogo-sponsors-microsoft.png&ehk=y5yTGjqpwna3nIajeBkwaMhYG1%2bcBIhTeugH0nZy8Gk%3d&risl=&pid=ImgRaw&r=0", alt="Sponser Image" Class = "spimage")
+          img(src="https://th.bing.com/th/id/R.eee1cbe51103ee8bedbd92fa1323cf4d?rik=HXZvnokiOnE3sw&riu=http%3a%2f%2f2.bp.blogspot.com%2f_UZImdYAiry8%2fTL6vjYn4z-I%2fAAAAAAAAUy8%2fYtak097oFh0%2fs400%2fHP_NEW_logo.jpg&ehk=0DSXJ4g3jH2BGOhm2KMosmr%2fL69%2ba7MvW0Pgg5uIKUc%3d&risl=&pid=ImgRaw&r=0", alt="Sponser Image" Class = "spimage")
+          img(src="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg", alt="Sponser Image" Class = "spimage")
+

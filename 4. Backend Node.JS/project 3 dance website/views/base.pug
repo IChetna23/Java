@@ -1,0 +1,24 @@
+//- template inheritence
+//- use seprate style sheets
+
+//- layout.pug - creating template
+doctype html
+html
+  head
+    title My Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar 
+            ul 
+                li 
+                    div#logo 
+                       img(src="https://static.vecteezy.com/system/resources/previews/020/618/442/original/dance-academy-logo-brand-symbol-design-graphic-minimalist-logo-vector.jpg")
+                li #[a(href = "/") About Us ]
+                li #[a(href = "/") Home ]
+                li #[a(href = "/") Services ]
+                li #[a(href = "/") Class Info ]
+                li #[a(href = "/") Contact Us ]
+    block content  
+    footer#footerSection
+            | Copyrifght © 2024 mydanceacademy | All Rights Reserved 

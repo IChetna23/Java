@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Hubballi&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Alata;
+}
+#navbar{
+    background-color: purple;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+li div#logo{
+    align-items: center;
+}
+li div#logo img{
+    height: 40px;
+    border: 2px solid plum;
+    border-radius: 100%;
+}
+#navbar li{
+    list-style: none;
+    padding: 15px 30px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#navbar li a:hover{
+    font-weight: bold;
+    color: black;
+}
+#introSection{
+    font-size: 45px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* left right center */
+    align-items: center; /* upar neeche center */
+    background: center /cover no-repeat url("static/d2.png");
+    opacity: 0.7;
+    height: 400px;
+    padding-bottom: 40px;
+}
+#introSection div.small{
+    font-size: 30px;
+    padding: 5px;
+}
+#missionSection{
+    background-color: white;
+    height: 300px;
+    display: block;
+    margin: auto;
+    width: 87%;
+}
+#missionSection h2{
+    padding: 4px; /* inside spacing */
+    text-align: center;
+    padding-top: 20px;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 22px;
+    height: 209px;
+    background-color: #f9eafd;
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+}
+.card-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* upar neeche */
+}
+.card-img{
+    height: 100px;
+    padding-block-end: 0px 12px;
+}
+.card-img img{
+    height: inherit;
+    background: none;
+    mix-blend-mode: multiply; /* Blend the image with the background */
+}
+.card-content p{
+    margin: 10px 0px;
+}
+#sponserSection{
+    background-color: #d1bed6;
+    height: 230px;
+}
+#sponserSection h2{
+    padding: 4px; /* inside spacing */
+    text-align: center;
+    padding-top: 20px;
+}
+div#sponsers {
+    height: 120px;
+    max-width: 36%;
+    margin: 12px auto;
+}
+div#sponsers img.spimage{
+    height: 100px;
+    margin: 20px;
+    mix-blend-mode: multiply;
+}
+#footerSection{
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-style: none;
+}
